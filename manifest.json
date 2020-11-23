@@ -1,0 +1,35 @@
+{
+
+    "manifest_version": 2,
+    "name": "BetterILIAS",
+    "version": "1.0",
+  
+    "description": "Make ILIAS easier to work with.",
+    "homepage_url": "https://github.com/j0risj/BetterILIAS",
+    "developer": {
+      "name": "Joris Janßen",
+      "url": "https://github.com/j0risj"
+    },
+  
+    "icons": {
+      "48": "better_illias_icon-48.png"
+    },
+
+    "permissions": [
+        "*://ilias3.uni-stuttgart.de/*",
+        "webRequest",
+        "tabs"
+    ],
+  
+    "content_scripts": [
+      {
+        "matches": ["*://ilias3.uni-stuttgart.de/*"],
+        "js": ["better_illias.js"]
+      }
+    ],
+
+    "background": {
+        "scripts": ["better_illias_background.js"]
+    }
+  
+  }
