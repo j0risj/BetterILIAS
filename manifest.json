@@ -14,22 +14,11 @@
     "icons": {
       "48": "better_illias_icon-48.png"
     },
-
-    "permissions": [
-        "*://ilias3.uni-stuttgart.de/*",
-        "webRequest",
-        "tabs"
-    ],
   
     "content_scripts": [
       {
         "matches": ["*://ilias3.uni-stuttgart.de/*"],
         "js": ["better_illias.js"]
       }
-    ],
-
-    "background": {
-        "scripts": ["better_illias_background.js"]
-    }
-  
+    ]
   }
